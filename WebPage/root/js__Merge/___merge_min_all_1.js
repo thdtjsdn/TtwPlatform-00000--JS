@@ -303,4 +303,4 @@ window.zzzzzzzzzz__development__js=window.zzzzzzzzzz__development__js||{};
 
 window.zzzzzzzzzz__development__js.console=window.zzzzzzzzzz__development__js.console||{};
 
-!function(){window.HykLog=SUtilCommon.create_Console("김현요"),window.NajiLog=SUtilCommon.create_Console("나정훈"),window.RayLog=SUtilCommon.create_Console("박종하"),window.cparkLog=SUtilCommon.create_Console("박천수-퇴사"),window.Rh2Log=SUtilCommon.create_Console("유선아"),window.JkLog=SUtilCommon.create_Console("이재경-퇴사"),window.JaceLog=SUtilCommon.create_Console("이재현"),window.JamesLog=SUtilCommon.create_Console("이호영-퇴사"),window.BenLog=SUtilCommon.create_Console("정병의-퇴사"),window.KaiLog=SUtilCommon.create_Console("정재명"),window.AlexLog=SUtilCommon.create_Console("한영후-퇴사"),window.CSJLog=SUtilCommon.create_Console("최석준"),window.TtwLog=SUtilCommon.create_Console("송선우")}();
+!function(){window.HykLog=window.NajiLog=window.RayLog=window.cparkLog=window.Rh2Log=window.JkLog=window.JamesLog=window.BenLog=window.KaiLog=window.AlexLog=window.CSJLog=window.TtwLog=SUtilCommon.create_Console("송선우")}();
