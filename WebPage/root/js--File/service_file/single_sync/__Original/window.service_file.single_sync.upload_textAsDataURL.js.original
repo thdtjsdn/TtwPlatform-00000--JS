@@ -1,0 +1,43 @@
+//----------------------------------------------------------------------------------------------------;
+//var fileNm = "js/service_file/single_sync/window.service_file.single_sync.upload_textAsDataURL.js";
+//if( console ) console.log( "[ S ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
+
+/**
+ * @function
+ * @param {Object} d
+ * <code>
+	{
+		_storeItemKey : {String}
+		, file : {File}
+		, dateTime : ""
+		, id : ""
+		, offset_count : 0
+
+		, requestHeaders : { Content-type : "application/x-www-form-urlencoded" }
+	}
+ * </code>
+ * @param {Function} cbFunction function( result ){}
+ */
+window.service_file.single_sync.upload_textAsDataURL = function( d, cbFunction )
+{
+	//window.TtwLog.timeStamp( "---- [ S ] -window.service_file.single_sync.upload_textAsDataURL():void----------" );
+
+	//Target Object;
+	var to = d.target;
+
+	var url = window.b2link.url.getServerURLByServers( window.b2link.STATIC.CONFIG.URL.SCODE + "_APIServer" ) + "/file/single_sync/upload_textAsDataURL?"
+		+ "_storeItemKey=" + to._storeItemKey
+		+ "&fileNm=" + to.file.name
+		+ "&id=" + to.id
+		+ "&totalBytes=" + to.file.size;
+
+	//POST 방식의 XMLHTTPRequest 요청;
+	window.b2link_service.common._fn_req_POST__Str( url, d.dataURL, to.requestHeaders, cbFunction );
+
+	//window.TtwLog.timeStamp( "---- [ E ] - window.service_file.single_sync.upload_textAsDataURL():void----------" );
+};
+
+//----------------------------------------------------------------------------------------------------;
+//if( console ) console.log( "[ E ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;

@@ -1,0 +1,24 @@
+//----------------------------------------------------------------------------------------------------;
+//var fileNm = "js--Semantic-UI/smt_ui/modal/window.smt_ui.modal.hideByElement.js";
+//if( console ) console.log( "[ S ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
+
+/**
+ * Semant/ic UI Modal Visible - hide By HTMLElement
+ * @function
+ * @param {Array} a [ {HTMLElement}, {HTMLElement's Controller} ]
+ */
+window.smt_ui.modal.hideByElement = function( el )
+{
+	window.Rh2Log.timeStamp( "---- [ S ] - window.smt_ui.modal.hideByElement():void----------" );
+
+	$( el ).modal( "hide" );
+
+	window.Rh2Log.warn( el.className + "를 hide 시킴." );
+
+	window.Rh2Log.timeStamp( "---- [ E ] - window.smt_ui.modal.hideByElement():void----------" );
+};
+
+//----------------------------------------------------------------------------------------------------;
+//if( console ) console.log( "[ E ] - " + fileNm + "----------" );
+//----------------------------------------------------------------------------------------------------;
